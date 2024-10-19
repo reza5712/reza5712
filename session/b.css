@@ -1,0 +1,162 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.bars {
+  width: 100px;
+  height: 100vh;
+  background-color: aqua;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  display: flex;
+}
+#open:checked ~ aside {
+  transform: translateX(0);
+}
+#close,
+#open {
+  display: none;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+}
+
+nav {
+  width: 100%;
+height: 100%;
+  background-color: black;
+  display: flex;
+}
+
+nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+nav > ul > li {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding-left: 100px;
+}
+nav > ul > li > a {
+  color: aliceblue;
+}
+.logo {
+  color: aliceblue;
+  font-size: 2.5rem;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+.st {
+  color: aliceblue;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(25px);
+  font-size: 4rem;
+}
+.ball {
+  display: flex;
+  height: 100%;
+  width: 20%;
+}
+main {
+  width: 100%;
+  height: calc(100vh - 4rem);
+  background-image: linear-gradient(to bottom, black, white);
+}
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .bars {
+    width: 100px;
+    height: calc(100vh - 3rem);
+    background-color: aqua;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  #open:checked ~ aside {
+    transform: translateX(0);
+  }
+  #close,
+  #open {
+    display: none;
+  }
+  header {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+
+  }
+
+  nav {
+    width: 100%;
+height: 100%;
+    background-color: black;
+    display: flex;
+  }
+
+  nav > ul {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  nav > ul > li {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding-left: 100px;
+  }
+  nav > ul > li > a {
+    color: aliceblue;
+  }
+  .logo {
+    color: aliceblue;
+    font-size: 2.5rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .st {
+    color: aliceblue;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(25px);
+    font-size: 4rem;
+  }
+  .ball {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    justify-content: end;
+  }
+  main {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-image: linear-gradient(to bottom, black, white);
+  }
+}

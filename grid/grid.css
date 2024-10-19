@@ -1,0 +1,99 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container{
+
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 3rem calc(100vh - 7rem) 4rem;
+    grid-template-areas: "header header"
+                            "min-1 min-2"
+                            "footer-1 footer-2";
+}
+
+header{
+
+    grid-area: header;
+    background-color:forestgreen;
+}
+
+.container > header{
+    width: 100%;
+    height: auto;
+}
+
+.container > header > nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.container > header > nav > ul{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.container > header > nav > ul > li{
+
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-size: 2rem;
+}
+
+aside{
+    grid-area: min-1;
+    background-color: blue;
+    display: flex;
+}
+
+main{
+    grid-area: min-2;
+    background-color: gold;
+    display: flex;
+}
+
+footer{
+    grid-area: footer-1;
+    background-color: aqua;
+}
+.gold{
+    height: 50%;
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-2{
+    grid-area: footer-2;
+    background-color: yellowgreen;
+}
+.gold > img{
+    width: 200px;
+    height: 100px;
+
+}
+h1{
+    font-size: 4rem;
+    padding-left: 50px;
+}
+p{
+    font-size: large;
+}

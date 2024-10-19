@@ -1,0 +1,28 @@
+*{
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+aside{
+    width: 100px;
+    height: 100vh;
+    background-color: aqua;
+transform: translateX(-100%);
+position: fixed;
+top: 0;
+left: 0;
+padding: 10px;
+}
+#open:checked ~ aside{
+transform: translateX(0);
+}
+#close,#open{
+    display: none;
+}
+body{
+    padding: 10px;
+}

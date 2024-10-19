@@ -1,0 +1,151 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: aquamarine;
+}
+
+header > nav {
+  width: 100%;
+  height: 100%;
+  color: #004080;
+  display: flex;
+}
+
+header > nav > ul {
+  width: 65%;
+  height: 100%;
+  display: flex;
+}
+
+.header-logo {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 39px;
+}
+
+header > nav > ul > li {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: end;
+  padding-right: 30px;
+}
+
+.main-logo > button {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: solid transparent;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+.main-logo > button:hover {
+  font-size: 1rem;
+}
+
+.drop-down-container {
+  position: relative;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+
+.drop-down-container:hover {
+  overflow: visible;
+}
+
+.drop-down {
+  position: absolute;
+  width: 150%;
+  height: 6rem;
+  top: 100%;
+}
+
+.drop-down > ul {
+  width: 100%;
+  height: 100%;
+}
+
+.drop-down > ul > li {
+  width: 100%;
+  height: 33.3%;
+}
+
+.drop-down > ul > li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #00eea0;
+  transition: all 200ms;
+}
+
+.drop-down > ul > li > a:hover {
+  background-color: #00bf82;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 4rem);
+  background-image: linear-gradient(to bottom, aquamarine, #00eea0 50%);
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+.img {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img:hover > .img-footer {
+  overflow: visible;
+  bottom: 0;
+}
+
+.img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.img-footer {
+  background-color: aliceblue;
+  position: absolute;
+  overflow: hidden;
+  bottom: -70%;
+  transition: all 200ms ease-out;
+  padding: 10px;
+  border-radius: 10px;
+}
