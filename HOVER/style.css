@@ -1,0 +1,257 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.header-menu {
+  background-color: black;
+  display: flex;
+}
+.head-1 {
+  width: 15%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  gap: 3px;
+  font-size: 30px;
+}
+.head-2 {
+  width: 33%;
+  height: 4rem;
+  display: flex;
+  margin-left: 280px;
+}
+.head-2 > nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.head-2 > nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.head-2 > nav > ul > li {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.head-2 > nav > ul > li > a {
+  color: gray;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.head-2 > nav > ul > li:hover > a {
+  color: #d7d7d7;
+}
+.head-3 {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  gap: 10px;
+  font-size: 1.7rem;
+}
+.head-3 > i{
+    width: 14%;
+    transition: all 200ms ease-in-out ;
+    cursor: pointer;
+}
+.head-3 > i:hover{
+    color: #d7d7d7;
+}
+.fa-twitter {
+  color: gray;
+}
+.fa-facebook {
+  color: gray;
+}
+.fa-instagram {
+  color: gray;
+}
+
+.fa-linkedin {
+  color: gray;
+}
+.middle {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.middle > .text {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 50px;
+}
+.middle > .text > .para-1 {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.middle > .text > .para-2 {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+.shape {
+  width: 165px;
+  height: 17px;
+  background-color: #05a988;
+  margin-top: 65px;
+  margin-left: calc(40% + 4px);
+  position: absolute;
+  z-index: -1;
+}
+.middle{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.middle > .images{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.middle > .images > .album{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.middle > .images > .album > .im{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.middle > .images > .album > .im > img{
+    display: flex;
+    width: 97%;
+    border-radius: 10px;
+    position: relative;
+}
+footer {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+footer > .f-para-1 > pre {
+  width: 100%;
+  height: 100%;
+  color: #d7d7d7;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+footer > .f-para-2 > pre {
+  width: 100%;
+  height: 100%;
+  color: #d7d7d7;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+footer > .f-para-1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+footer > .f-para-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 8px;
+}
+footer > .f-para-2 > pre > span {
+  color: #00c431;
+  cursor: pointer;
+}
+.drop-down-container {
+  position: relative;
+}
+.drop-down-container:hover .drop-down {
+  transform: translateY(-10px);
+  opacity: 1;
+}
+
+.drop-down {
+    opacity: 0;
+  display: flex;
+  z-index: 2;
+  background-color: #333333;
+  margin-right: -2px;
+  margin-top: calc(150px + 3rem);
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  border-radius: 5px;
+  padding-left: 7px;
+  transition: all 500ms ease-in-out;
+}
+.li-menu > li {
+  padding-top: 2px;
+  cursor: pointer;
+}
+.li-menu > li > a {
+  color: #979797;
+}
+.li-menu > li:hover{
+    background-color: #484848;
+}
+.im-ic{
+    background-color: #000000;
+    width: 370px;
+    height: 280px;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px;
+    padding-left: 165px;
+    padding-top: 160px;
+    gap: 10px;
+    opacity: 0;
+    cursor: pointer;
+}
+.im-ic > i{
+    z-index: 3;
+    color: white;
+    opacity: 1;
+}
+.middle > .images > .album > .im > .im-ic:hover{
+    opacity: 0.5;
+}
+.middle > .images > .album > .im > .im-ic:hover > i{
+    transform: translateY(-20px);
+}
+.middle > .images > .album > .im > .im-ic > i{
+    transition: all 200ms ease-in-out;
+}
+.middle > .images > .album > .im > .im-ic{
+    transition: all 200ms ease-in-out;
+}
