@@ -29,14 +29,12 @@
   color: #f0f8ff;
   border-radius: 5px;
   border: solid #0080ff;
-  cursor: pointer;
 }
 .class > button {
   background-color: #ff0000;
   color: aliceblue;
   border-radius: 5px;
   border: solid red;
-  cursor: pointer;
 }
 .class {
   text-align: center;
