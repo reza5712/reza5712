@@ -24,25 +24,26 @@
 .text {
   text-align: center;
 }
-.classr>button {
+.classr > button {
   background-color: #0080ff;
   color: #f0f8ff;
   border-radius: 5px;
   border: solid #0080ff;
-
+  cursor: pointer;
 }
-.class>button {
-    background-color: #ff0000;
-    color: aliceblue;
+.class > button {
+  background-color: #ff0000;
+  color: aliceblue;
   border-radius: 5px;
   border: solid red;
-  }
-  .class{
-    text-align: center;
-  }
-  .classr{
-    text-align: center;
-  }
+  cursor: pointer;
+}
+.class {
+  text-align: center;
+}
+.classr {
+  text-align: center;
+}
 .shaper {
   height: 180px;
   width: 300px;
